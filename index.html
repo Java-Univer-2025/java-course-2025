@@ -1,149 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Java Presentations (University 2025)</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
-      background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
-    }
-    
-    h1 {
-      color: #1e40af;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      font-size: 2.5rem;
-    }
-    
-    .presentation {
-      background: white;
-      padding: 25px 30px;
-      margin: 20px 0;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    
-    .presentation:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    }
-    
-    .presentation-content {
-      flex: 1;
-    }
-    
-    .presentation h2 {
-      margin: 0 0 10px 0;
-      color: #1e293b;
-      font-size: 1.5rem;
-    }
-    
-    .presentation p {
-      margin: 0;
-      color: #64748b;
-      font-size: 1rem;
-    }
-    
-    .presentation-link {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 24px;
-      background: linear-gradient(135deg, #ea580c 0%, #f59e0b 100%);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: all 0.2s;
-      white-space: nowrap;
-    }
-    
-    .presentation-link:hover {
-      background: linear-gradient(135deg, #c2410c 0%, #d97706 100%);
-      box-shadow: 0 4px 8px rgba(234, 88, 12, 0.3);
-    }
-    
-    .chevron {
-      width: 20px;
-      height: 20px;
-      border-right: 3px solid white;
-      border-bottom: 3px solid white;
-      transform: rotate(-45deg);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Presentations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
 </head>
 <body>
-  <h1>
-    <span style="font-size: 3rem;">☕</span>
-    Java Presentations
-  </h1>
-  
-  <div class="presentation">
-    <div class="presentation-content">
-      <h2>🔧 Gradle • Serialization</h2>
-      <p>Gradle, serialization, deserialization, properties files</p>
-    </div>
-    <a href="./presentations/serialization/" class="presentation-link">
-      View Presentation
-      <div class="chevron"></div>
-    </a>
-  </div>
-  
-  <div class="presentation">
-    <div class="presentation-content">
-      <h2>✅ Annotation and Validation</h2>
-      <p>Annotations, validation, Hibernate Validator</p>
-    </div>
-    <a href="./presentations/validation/" class="presentation-link">
-      View Presentation
-      <div class="chevron"></div>
-    </a>
-  </div>
+    <div class="container">
+        <header>
+            <h1>☕ Java Presentations</h1>
+            <p class="subtitle">Interactive learning materials for Java developers</p>
+        </header>
+        
+        <div class="presentations">
+            <a href="pdfs/java_lec1.pdf" class="card" target="_blank" rel="noopener">
+                    <div class="card-header">
+                        <h3><span class="icon">📦</span>Intro</h3>
+                        <span class="arrow">→</span>
+                    </div>
+                    <p>Вступ • Класи та об'єкти • Створення об'єктів • Пакети • Наслідування • Модифікатори доступу</p>
+                </a>
+                
+                <a href="pdfs/java_lec2.pdf" class="card" target="_blank" rel="noopener">
+                    <div class="card-header">
+                        <h3><span class="icon">✨</span> Modern Java Features: Records, Switch Expressions, and More</h3>
+                        <span class="arrow">→</span>
+                    </div>
+                    <p>Switch expression • Enum • Record • Equals, hashCode</p>
+                </a>
+                
+                <a href="pdfs/java_lec3.pdf" class="card" target="_blank" rel="noopener">
+                    <div class="card-header">
+                        <h3><span class="icon">⚠️</span> Exception Handling</h3>
+                        <span class="arrow">→</span>
+                    </div>
+                    <p>Основні поняття • Ієрархія Throwable • Checked vs Unchecked • Error vs Exception • Try-with-resources • Best Practices</p>
+                </a>
+                
+                <a href="pdfs/java_lec4.pdf" class="card" target="_blank" rel="noopener">
+                    <div class="card-header">
+                        <h3><span class="icon">🧪</span> Logging and unit testing</h3>
+                        <span class="arrow">→</span>
+                    </div>
+                    <p>Рівні логування • Log4j, SLF4J, Logback • JUnit основи • Mockito • Інтеграція логування та тестування</p>
+                </a>
+            
+            <a href="https://javainterface.netlify.app" class="card" target="_blank" rel="noopener">
+                <div class="card-header">
+                    <h2><span class="icon">🔌</span> Java Interfaces</h2>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+            
+            <a href="https://javalecture5.netlify.app" class="card" target="_blank" rel="noopener">
+                <div class="card-header">
+                    <h2><span class="icon">📚</span> Generics, Collections, Functional Interface</h2>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
 
-    <div class="presentation">
-    <div class="presentation-content">
-      <h2>🧵 Багатопоточність та Concurrency</h2>
-      <p>Java • ExecutorService • CompletableFuture</p>
-    </div>
-    <a href="./presentations/parallel/" class="presentation-link">
-      View Presentation
-      <div class="chevron"></div>
-    </a>
-  </div>
+            <a href="https://stream-api-presentation.netlify.app" class="card" target="_blank" rel="noopener">
+                <div class="card-header">
+                    <h2><span class="icon">🌊</span> Stream API</h2>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+        </div>
 
-      <div class="presentation">
-    <div class="presentation-content">
-      <h2>🏗️ Патерни створення об'єктів</h2>
-      <p>Java • Factory Methods • Builder Pattern • Lombok </p>
-    </div>
-    <a href="./presentations/builder/" class="presentation-link">
-      View Presentation
-      <div class="chevron"></div>
-    </a>
-  </div>
-
-  
         <div class="presentation">
-    <div class="presentation-content">
-      <h2>🌐 Java Servlets</h2>
-      <p>HTTP • Request/Response • Життєвий цикл • Сесії </p>
+            <div class="presentation-content">
+              <h2>🔧 Gradle • Serialization</h2>
+              <p>Gradle, serialization, deserialization, properties files</p>
+            </div>
+            <a href="./presentations/serialization/" class="presentation-link">
+              View Presentation
+              <div class="chevron"></div>
+            </a>
+          </div>
+          
+          <div class="presentation">
+            <div class="presentation-content">
+              <h2>✅ Annotation and Validation</h2>
+              <p>Annotations, validation, Hibernate Validator</p>
+            </div>
+            <a href="./presentations/validation/" class="presentation-link">
+              View Presentation
+              <div class="chevron"></div>
+            </a>
+          </div>
+        
+            <div class="presentation">
+            <div class="presentation-content">
+              <h2>🧵 Багатопоточність та Concurrency</h2>
+              <p>Java • ExecutorService • CompletableFuture</p>
+            </div>
+            <a href="./presentations/parallel/" class="presentation-link">
+              View Presentation
+              <div class="chevron"></div>
+            </a>
+          </div>
+        
+              <div class="presentation">
+            <div class="presentation-content">
+              <h2>🏗️ Патерни створення об'єктів</h2>
+              <p>Java • Factory Methods • Builder Pattern • Lombok </p>
+            </div>
+            <a href="./presentations/builder/" class="presentation-link">
+              View Presentation
+              <div class="chevron"></div>
+            </a>
+          </div>
+        
+          
+                <div class="presentation">
+            <div class="presentation-content">
+              <h2>🌐 Java Servlets</h2>
+              <p>HTTP • Request/Response • Життєвий цикл • Сесії </p>
+            </div>
+            <a href="./presentations/servlet/" class="presentation-link">
+              View Presentation
+              <div class="chevron"></div>
+            </a>
+          </div>
+        
+        <footer>
+            <p>Made with ❤️ for Java learners</p>
+        </footer>
     </div>
-    <a href="./presentations/servlet/" class="presentation-link">
-      View Presentation
-      <div class="chevron"></div>
-    </a>
-  </div>
-
-
 </body>
 </html>
